@@ -14,14 +14,11 @@ while True:
     if user == 'q':
         print('quit')
         break
-    
-    fave_language = input('what is your favourite language? ')
-
-
-    print ('\nadding you to the dictionary...\n')
+    else:
+        fave_language = input('what is your favourite language? ')
+        print ('\nadding you to the dictionary...\n')
 
     favourite_languages[user] = fave_language
 
-    for name, language in favourite_languages.items():
-        print(name.title() + "'s favourite language is " + language.title() + '\n')
-
+for name, language in favourite_languages.items():
+    print(name.title() + "'s favourite language is " + language.title() + '\n')
